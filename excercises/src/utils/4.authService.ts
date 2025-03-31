@@ -6,6 +6,7 @@ export class AuthService {
     const response = await fetch('https://fakestoreapi.com/auth/login', {
       method: 'POST',
       body: JSON.stringify(credentials),
+      headers: { "Content-Type": "application/json" },
     });
     if (!response.ok) {
       throw new Error('Login failed');

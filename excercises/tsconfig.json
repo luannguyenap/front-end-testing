@@ -18,7 +18,10 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    "esModuleInterop": true,
+    "types": ["jest"]
+
   },
-  "include": ["src"]
+  "include": ["src", "src/__test__/authService.test.ts", "src/__test__/authService2.test.ts", "src/__test__/discount.test.ts"]
 }
